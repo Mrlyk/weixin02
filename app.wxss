@@ -1,0 +1,4 @@
+/* 通用的设置可以放到这里面 */
+text{
+  font-family: MicroSoft Yahei;
+}

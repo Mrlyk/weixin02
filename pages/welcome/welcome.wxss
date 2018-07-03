@@ -1,0 +1,45 @@
+/* 样式较多写入wxss较好，也更规范 */
+
+/* 写css要先注意整体，不要一个一个元素去凑 */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b3d4db;
+  /* height: 1334rpx;设置高度来填满背景色，但是页面太长时会出问题，100%也无法设置 */
+}
+
+.user-touxiang {
+  width: 200rpx;
+  height: 200rpx;
+  margin-top: 160rpx;
+}
+
+.user-ziti {
+  font-size: 32rpx;
+  font-family: MicroSoft Yahei; /*字体样式  */
+  font-weight: bold; /* 加粗*/
+  margin-top: 100rpx;
+}
+
+.in-container {
+  border: 1px solid #405f80; /* 边框样式*/
+  width: 200rpx;
+  height: 80rpx;
+  border-radius: 5px; /*圆角矩形*/
+  text-align: center;
+  margin-top: 200rpx;
+}
+
+.user-ziti2 {
+  font-size: 22rpx;
+  line-height: 80rpx; /*让字体高度等于容器高度来达到垂直居中的效果*/
+  color: #405f80;
+}
+
+page{/*page是程序默认套在你定义的组建最外面的一层，编辑它可以编辑整体页面样式*/
+  height: 100%;
+  background-color: #b3d4db;
+
+}
