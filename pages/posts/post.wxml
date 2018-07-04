@@ -1,0 +1,47 @@
+<!-- 静态页面 -->
+<!--滚动图片  -->
+<view>
+  <!-- 纵向滚动vertical="true"  -->
+  <swiper indicator-dots="true" autoplay="true" interval="3000">
+    <swiper-item>
+      <image src='/images/sw1.png'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/sw2.png'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/sw3.png'></image>
+    </swiper-item>
+  </swiper>
+
+  <!-- 要循环先用block标签包裹起来，相当于一个括号 -->
+  <!-- wx:for-index="idx"可以用来显示是第几个元素 -->
+  <block wx:for="{{haimian_key}}" wx:for-item="item">
+    <!-- 第一篇文章 -->
+    <view class='incontainer'>
+      <view class='author'>
+        <image class='touxiang' src='{{item.img.imgtouxiang}}'></image>
+        <text class='ziti1'>{{item.date}}</text>
+      </view>
+      <text class='ziti'>{{item.title}}</text>
+      <image wx:if="{{true}}" class='pic' src='{{item.img.img}}'></image>
+      <text class='ziti2'>{{item.content}}</text>
+      <view class='comment'>
+        <image class='ico' src='/images/ico/shoucang.png'></image>
+        <text class='ziti3'>{{item.shou}}</text>
+        <image class='ico' src='/images/ico/dianzan.png'></image>
+        <text class='ziti3'>{{item.zan}}</text>
+      </view>
+    </view>
+  </block>
+
+
+  <!-- 第二篇文章 -->
+
+
+
+
+
+
+
+</view>
