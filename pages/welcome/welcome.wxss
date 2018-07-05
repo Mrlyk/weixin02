@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #b3d4db;
+  background-color: #ffbd9d;
   /* height: 1334rpx;设置高度来填满背景色，但是页面太长时会出问题，100%也无法设置 */
 }
 
@@ -40,6 +40,6 @@
 
 page{/*page是程序默认套在你定义的组建最外面的一层，编辑它可以编辑整体页面样式*/
   height: 100%;
-  background-color: #b3d4db;
+  background-color: #ffbd9d;
 
 }

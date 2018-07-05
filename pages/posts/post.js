@@ -24,7 +24,7 @@ Page({
    * 从服务器获取数据应该和页面加载放一起
    */
   onLoad: function(options) {
-    console.log("onLoad");
+    // console.log("onLoad");
 
     /**假设下面的数据是从服务器获取到的 */
     var haimian = [{
@@ -49,6 +49,18 @@ Page({
         },
         shou: "87",
         zan: "198"
+      },
+      
+      {
+        date: "April 13 2018",
+        title: "海绵宝宝3",
+        content: "这部动画除了固定描绘的卡通场景与人物之外，也会穿插一些真实的物件或人物：例如曾出演《海滩游侠》与《霹雳游侠》的大卫·哈塞尔霍夫，以本人的身份出演了几集。但海绵宝宝卡通的内容基本上与海洋知识无关，甚至夸大到完全不合乎科学与常识，例如海底生火、海底冲澡等，剧集内容也会时不时的嘲笑精致艺术和章鱼哥的劳工权益想法。",
+        img: {
+          imgtouxiang: "/images/touxiang/touxiang3.png",
+          img: "/images/artical/03.png",
+        },
+        shou: "70",
+        zan: "159"
       }
     ]
 
@@ -64,7 +76,6 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function() {
-    console.log("onReady");
 
   },
 
@@ -72,14 +83,14 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-    console.log("onShow");
+
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function() {
-    console.log("onHide");
+
 
   },
 
@@ -87,27 +98,27 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function() {
-    console.log("onUnload");
+
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function() {
-    console.log("onPullDownRefresh");
+
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function() {
-    console.log("onReachBottom");
+
   },
 
   /**
    * 用户点击右上角分享
    */
   onShareAppMessage: function() {
-    console.log("onShareAppMessage");
+
   }
 })

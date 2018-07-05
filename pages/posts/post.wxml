@@ -16,7 +16,7 @@
 
   <!-- 要循环先用block标签包裹起来，相当于一个括号 -->
   <!-- wx:for-index="idx"可以用来显示是第几个元素 -->
-  <block wx:for="{{haimian_key}}" wx:for-item="item">
+  <block wx:for="{{haimian_key}}" wx:for-item="item" wx:key="key">
     <!-- 第一篇文章 -->
     <view class='incontainer'>
       <view class='author'>

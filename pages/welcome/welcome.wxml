@@ -5,7 +5,7 @@
 <view class="container">
   <image class="user-touxiang" src='/images/first.PNG'></image>
   <text class="user-ziti"><text style="color:red">Hello</text>,Star</text>
-  <view class="in-container">
+  <view class="in-container" bindtap='onTap'>
     <text class="user-ziti2">开启小程序之旅</text>
   </view>
 
