@@ -1,5 +1,7 @@
 <!-- 静态页面 -->
 <!--滚动图片  -->
+
+<import src="post-item-template/post-item.wxml"/>
 <view>
   <!-- 纵向滚动vertical="true"  -->
   <swiper indicator-dots="true" autoplay="true" interval="3000">
@@ -18,21 +20,10 @@
   <!-- wx:for-index="idx"可以用来显示是第几个元素 -->
   <block wx:for="{{haimian_key}}" wx:for-item="item" wx:key="key">
     <!-- 第一篇文章 -->
-    <view class='incontainer'>
-      <view class='author'>
-        <image class='touxiang' src='{{item.img.imgtouxiang}}'></image>
-        <text class='ziti1'>{{item.date}}</text>
-      </view>
-      <text class='ziti'>{{item.title}}</text>
-      <image wx:if="{{true}}" class='pic' src='{{item.img.img}}'></image>
-      <text class='ziti2'>{{item.content}}</text>
-      <view class='comment'>
-        <image class='ico' src='/images/ico/shoucang.png'></image>
-        <text class='ziti3'>{{item.shou}}</text>
-        <image class='ico' src='/images/ico/dianzan.png'></image>
-        <text class='ziti3'>{{item.zan}}</text>
-      </view>
-    </view>
+    <!--使用模板  -->
+    <template is="post-item" data="{{item}}"/>
+
+    
   </block>
 
 
