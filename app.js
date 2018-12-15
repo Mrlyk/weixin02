@@ -1,0 +1,3 @@
+App({
+	'playing':false,
+})

@@ -8,7 +8,19 @@ var haimian = [{
     imgartical: "/images/artical/01.png",
   },
   shou: "78",
-  zan: "187"
+  zan: "187",
+	postId:'0',
+	// 详情页面
+	headImg:'/images/artical/01.png',
+	author:'Mrlyk1',
+	dateTime:'0天前',
+	
+	// 音乐地址
+	music:{
+		url:'http://183.131.48.150/amobile.music.tc.qq.com/C400000T9EoY2JOCh1.m4a?guid=8529490550&vkey=3D309E1CC973D7A5939B732276E028E96D37401D13BE3F2E170980D6DA1757C9BD21C7C156F9C59A53E7A21007994E04C499379832B6B793&uin=0&fromtag=66',
+		imgUrl:'https://y.gtimg.cn/music/photo_new/T002R300x300M000001Xmn3t2WkB9x.jpg?max_age=2592000',
+		title:'Havana'
+	}
 },
 
 {
@@ -20,7 +32,17 @@ var haimian = [{
     imgartical: "/images/artical/02.png",
   },
   shou: "87",
-  zan: "198"
+  zan: "198",
+	postId:'1',
+	// 详情页面
+	headImg:'/images/artical/02.png',
+	author:'Mrlyk2',
+	dateTime:'1天前',
+	music:{
+		url:'http://183.131.48.156/amobile.music.tc.qq.com/C400000ekQe62b8o4Z.m4a?guid=8529490550&vkey=1F9F64341442460E86A0D3038CAEC531DEA74468CE2235EE78A08C75659D35C42CD852B712C2A6CE99B62602C4C37CF502CB6DD632C54284&uin=4618&fromtag=66',
+		imgUrl:'https://y.gtimg.cn/music/photo_new/T001R300x300M0000001RhJI44f8tn.jpg?max_age=2592000',
+		title:'Just a Dream'
+	}
 },
 
 {
@@ -32,7 +54,17 @@ var haimian = [{
     imgartical: "/images/artical/03.png",
   },
   shou: "70",
-  zan: "159"
+  zan: "159",
+	postId:'2',
+	// 详情页面
+	headImg:'/images/artical/03.png',
+	author:'Mrlyk3',
+	dateTime:'2天前',
+	music:{
+		url:'http://183.131.48.147/amobile.music.tc.qq.com/C4000045YH3S0snUpg.m4a?guid=8529490550&vkey=FE9FF76844DA671D107D4BF4ADA6E8A4441AD870D972E4D3774F273128951E170020758436942E9534890A094B336463C31710D0B472A6CB&uin=4618&fromtag=66',
+		imgUrl:'https://y.gtimg.cn/music/photo_new/T002R300x300M000002lqUV40pTJLE.jpg?max_age=2592000',
+		title:'海绵宝宝'
+	}
 }
 ]
 

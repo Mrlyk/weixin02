@@ -1,38 +1,35 @@
 <!-- 静态页面 -->
 <!--滚动图片  -->
 
-<import src="post-item-template/post-item.wxml"/>
+<import src="post-item-template/post-item.wxml" />
 <view>
-  <!-- 纵向滚动vertical="true"  -->
-  <swiper indicator-dots="true" autoplay="true" interval="3000">
-    <swiper-item>
-      <image src='/images/sw1.png'></image>
-    </swiper-item>
-    <swiper-item>
-      <image src='/images/sw2.png'></image>
-    </swiper-item>
-    <swiper-item>
-      <image src='/images/sw3.png'></image>
-    </swiper-item>
-  </swiper>
+	<!-- 纵向滚动vertical="true"  -->
+	<swiper indicator-dots="true" autoplay="true" interval="3000">
+		<swiper-item>
+			<image src='/images/sw1.png'></image>
+		</swiper-item>
+		<swiper-item>
+			<image src='/images/sw2.png'></image>
+		</swiper-item>
+		<swiper-item>
+			<image src='/images/sw3.png'></image>
+		</swiper-item>
+	</swiper>
 
-  <!-- 要循环先用block标签包裹起来，相当于一个括号 -->
-  <!-- wx:for-index="idx"可以用来显示是第几个元素 -->
-  <block wx:for="{{haimian_key}}" wx:for-item="item" wx:key="key">
-    <!-- 第一篇文章 -->
-    <!--使用模板  -->
-    <template is="post-item" data="{{item}}"/>
+	<!-- 要循环先用block标签包裹起来，相当于一个括号 -->
+	<!-- wx:for-index="idx"可以用来显示是第几个元素 -->
+	<block wx:for="{{haimian_key}}" wx:for-item="item" wx:key="key">
+		<!-- 第一篇文章 -->
+		<!--使用模板  -->
+		<!-- ... 表示将数据展开，后面调用时可以不加item而直接使用名字来代表每一项 -->
+		<!-- data-postId 会绑定在每个view上，postId是自己定义的字段名 -->
+		<!-- 而这个postid会挂载在点击的块的currentTarget.dateset上，注意字段名多个-的时候会使用驼峰写法，且每一段里的大写会被自动转小写 -->
+		<!-- 多个值都将是dataset这个对象都属性 -->
+		<!-- 小程序不能像h5那样直接把参数放在绑定的方法里传递 -->
+		<view catchtap="toDetail" data-postid="{{item.postId}}">
+			<template is="post-item" data="{{...item}}" />
+		</view>
 
-    
-  </block>
-
-
-  <!-- 第二篇文章 -->
-
-
-
-
-
-
+	</block>
 
 </view>

@@ -1,17 +1,17 @@
 <template name="post-item">
   <view class='incontainer'>
     <view class='author'>
-      <image class='touxiang' src='{{item.img.imgtouxiang}}'></image>
-      <text class='ziti1'>{{item.date}}</text>
+      <image class='touxiang' src='{{img.imgtouxiang}}'></image>
+      <text class='ziti1'>{{date}}</text>
     </view>
-    <text class='ziti'>{{item.title}}</text>
-    <image wx:if="{{true}}" class='pic' src='{{item.img.imgartical}}'></image>
-    <text class='ziti2'>{{item.content}}</text>
+    <text class='ziti'>{{title}}</text>
+    <image wx:if="{{true}}" class='pic' src='{{img.imgartical}}'></image>
+    <text class='ziti2'>{{content}}</text>
     <view class='comment'>
       <image class='ico' src='/images/ico/shoucang.png'></image>
-      <text class='ziti3'>{{item.shou}}</text>
+      <text class='ziti3'>{{shou}}</text>
       <image class='ico' src='/images/ico/dianzan.png'></image>
-      <text class='ziti3'>{{item.zan}}</text>
+      <text class='ziti3'>{{zan}}</text>
     </view>
   </view>
 

@@ -3,10 +3,10 @@
 <!-- 只有被text标签包围起来的文字才可以在手机上被长按选中 -->
 <!-- 注意px和rpx的区别，rpx是手机上的，和px大概2：1（原来的一半），而且px不会随屏幕分辨率改变 -->
 <view class="container">
-  <image class="user-touxiang" src='/images/first.PNG'></image>
-  <text class="user-ziti"><text style="color:red">Hello</text>,Star</text>
-  <view class="in-container" bindtap='onTap'>
-    <text class="user-ziti2">开启小程序之旅</text>
-  </view>
+	<image class="user-touxiang" src='/images/first.PNG'></image>
+	<text class="user-ziti"><text style="color:red">Hello</text>,Star</text>
+	<view class="in-container" bindtap='onTap'>
+		<text class="user-ziti2">开启程序之旅</text>
+	</view>
 
 </view>

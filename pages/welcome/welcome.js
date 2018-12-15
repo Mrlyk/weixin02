@@ -8,6 +8,7 @@ Page({
   },
 
   onTap: function(event) {
+		console.log(event);
     wx.redirectTo({
       url: '/pages/posts/post'
     });
