@@ -1,0 +1,32 @@
+<view>
+	<view style="position: relative;width: 100%;">
+		<image style="width: 100%;" src="{{playing?myData.music.imgUrl:myData.headImg}}"></image>
+		<!-- 添加图片中心的播放音乐功能 -->
+		<image class="music" catchtap="music" src="{{playing?'../../../images/ico/pause.png':'../../../images/ico/music.png'}}"></image>
+	</view>
+	<view class="container">
+		<!-- 头部信息 -->
+		<view class="head">
+			<image style="width:64rpx;height: 64rpx;" src="{{myData.img.imgtouxiang}}"></image>
+			<text class="author" style="font-size: 36rpx;">{{myData.author}}</text>
+			<text class="time">{{myData.dateTime}}</text>
+		</view>
+		<text class="myTitle">
+			{{myData.title}}
+		</text>
+		<view class="collect">
+			<image wx:if="{{isCollect}}" catchtap="collection" src="../../../images/ico/collect.png"></image>
+			<image class="unCollect" wx:else catchtap="collection" src="../../../images/ico/unCollect.png"></image>
+
+			<image catchtap="share" src="../../../images/ico/share.png"></image>
+		</view>
+		<!-- 横线 -->
+		<view class="line"></view>
+		<!-- 内容 -->
+		<text class="artical">{{myData.content}}
+		</text>
+
+
+	</view>
+
+</view>
